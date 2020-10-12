@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+.subtitle {
+  font-size: 1.6em;
+}
+
 .navbar-item img {
   max-height: 2.8rem !important;
 }
@@ -29,6 +33,7 @@ a {
 
 .hero-title {
   font-size: 2.8em;
+  color: yellow;
 }
 
 .hero-subtitle {
