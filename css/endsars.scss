@@ -1,0 +1,147 @@
+body {
+    background: #fff !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  }
+  
+  .hero {
+    background: url(/img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  
+  .navbar-item img {
+    max-height: 2.8rem !important;
+  }
+  
+  .navbar {
+    min-height: 4.2rem !important;
+  }
+  
+  * {
+    -webkit-transition: all .5s !important;
+    transition: all .5s !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .hero-title {
+    font-size: 2.8em;
+    // font-family: 'Playfair Display', serif !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2em;
+  }
+  
+  .my-mail {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .my-mail:hover {
+    background: #222;
+    color: #fff;
+  }
+  
+  #portfolio {
+    padding: 100px 0px;
+  }
+  .hero-btn{
+    padding: 10px 20px;
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-size: 1.2em;
+  }
+  .person-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: max-content;
+    grid-gap: 30px;
+  }
+  .person-box{
+      padding: 20px;
+      border: 1px solid #efefef;
+      border-radius: 10px;
+      img{
+        border-radius: 200px;
+        border:1px solid #efefef;
+        margin-bottom: 10px;
+      }
+      .name{
+        font-weight: 500;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+      }
+      .location{
+        color: #666;
+      }
+      span{
+        font-weight: 500;
+        color: #000;
+      }
+      .status{
+        padding: 5px 10px;
+        // background: #000;
+        display: inline-block;
+        border-radius: 3px;
+        font-size: .8em;
+        margin-top: 10px;
+        color: #fff;
+      }
+  }
+  
+  
+  footer {
+    padding: 30px 0px;
+    background-color: #efefef;
+  }
+  
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (max-width: 960px) {
+    .person-wrapper {
+      
+          grid-template-columns: repeat(2, 1fr);
+    }
+    #portfolio {
+      padding: 50px 30px;
+    }
+    .hero-subtitle {
+      font-size: 1em;
+    }
+    .hero-title {
+      line-height: 120%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    .person-wrapper {
+     
+          grid-template-columns: repeat(1, 1fr);
+    }
+    #portfolio {
+      padding: 50px 20px;
+    }
+    .hero-subtitle {
+      font-size: 1em;
+    }
+    .hero-title {
+      font-size: 2.2em;
+      line-height: 120%;
+    }
+    .excerpt {
+      margin-top: 10px !important;
+    }
+    footer {
+      padding: 30px;
+      background-color: #efefef;
+    }
+  }

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/endsars.css">
+    <title>#EndSARS Now</title>
+</head>
+<body>
+    <section class="hero is-black is-medium" >
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  #EndSarsNow
+                </a>
+                
+              </div>
+              
+            </div>
+          </nav>
+        </div>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container">
+                <div class="columns">
+                    <div class="column is-6">
+                        <h1 class="hero-title">
+                            #EndSARS 
+                          </h1>
+                          <h2 class="location">A documentation of persons arrested/detained during #EndSARS Protest</h2>
+                         <hr>
+                         <h2 class="city">
+                          You can contribute to this by adding onnly verified info here
+                        </h2>
+                       <a href="https://forms.gle/mdb24Pxw2SDRsw3A8" target="_blank" class="hero-btn">Contribute here</a>
+                        <br>
+                       
+                    </div>
+                    
+                   
+                </div>
+          </div>
+        </div>
+      
+        
+      </section>
+      
+    <section id="portfolio">
+        <div class="container">
+            <div class="person-wrapper" data-stein-url="https://api.steinhq.com/v1/storages/5f8424705d3cdc44fcd7d5bc/arrested">
+                
+                 <div class="person-box">
+                   <img src="https://www.placehold.it/60x60" alt="" srcset="">
+                    <h1 class="name">
+                        {{firstName}} {{lastName}} 
+                      </h1>
+                      <h2 class="location">Last seen at <span>{{location}}</span> in <span>{{city}}</span>, <span>{{state}}</span></h2>
+                    
+                    <h2 class="status" style="background: {{color}};">
+                        {{status}}
+                      </h2>
+                 </div>
+               
+             </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        No Copyright. Just #EndSARS.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/stein-expedite@0.0.4/dist/index.js"></script>
+</body>
+</html>
