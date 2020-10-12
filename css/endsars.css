@@ -145,7 +145,7 @@ footer {
 
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 960px) {
-  .person-wrapper {
+  .person-wrapper, .notable-links {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -162,7 +162,7 @@ footer {
 
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
-  .person-wrapper {
+  .person-wrapper, .notable-links {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }

@@ -131,7 +131,7 @@ body {
   
   /* On screens that are 992px wide or less, the background color is blue */
   @media screen and (max-width: 960px) {
-    .person-wrapper {
+    .person-wrapper,.notable-links {
       
           grid-template-columns: repeat(2, 1fr);
     }
@@ -148,7 +148,7 @@ body {
   
   /* On screens that are 600px wide or less, the background color is olive */
   @media screen and (max-width: 600px) {
-    .person-wrapper {
+    .person-wrapper, .notable-links {
      
           grid-template-columns: repeat(1, 1fr);
     }
