@@ -60,13 +60,26 @@ body {
     border-radius: 3px;
     font-size: 1.2em;
   }
-  .person-wrapper {
+  #notable-links{
+    padding: 100px 20px;
+    background: #fafafa;
+  }
+  #resources{
+    padding: 100px 20px;
+    background: #000;
+    color: #fff;
+    a{
+      color: yellow;
+    }
+  }
+ 
+  .person-wrapper, .links-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: max-content;
     grid-gap: 30px;
   }
-  .person-box{
+  .person-box, .links-box{
       padding: 20px;
       border: 1px solid #efefef;
       border-radius: 10px;
@@ -74,11 +87,20 @@ body {
         border-radius: 200px;
         border:1px solid #efefef;
         margin-bottom: 10px;
+        width: 60px;
+        display: block;
+        text-align: center !important;
+        margin: 0px auto;
       }
       .name{
         font-weight: 500;
         font-size: 1.6em;
         margin-bottom: 10px;
+      }
+      .account{
+        font-size: 1.2em;
+        margin-top: 20px !important;
+        display: block;
       }
       .location{
         color: #666;

@@ -70,7 +70,7 @@
         <div class="container">
             <div class="person-wrapper" data-stein-url="https://api.steinhq.com/v1/storages/5f8424705d3cdc44fcd7d5bc/arrested">
                 
-                 <div class="person-box">
+                 <div class="person-box has-text-centered">
                    <img src="https://www.placehold.it/60x60" alt="" srcset="">
                     <h1 class="name">
                         {{firstName}} {{lastName}} 
@@ -85,6 +85,35 @@
              </div>
         </div>
     </section>
+    <section id="notable-links">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="hero-subtitle">Notable Accounts to Follow</h2>
+          </div>
+        </div>
+        <div class="links-wrapper" data-stein-url="https://api.steinhq.com/v1/storages/5f8424705d3cdc44fcd7d5bc/notablelinks">
+          <div class="links-box has-text-centered">
+            <img src="https://unavatar.now.sh/twitter/{{account}}" alt="" srcset="">
+            <a class="account" target="_blank" href="https://twitter.com/{{account}}">{{account}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="resources">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="hero-subtitle">Resource Links</h2>
+          </div>
+        </div>
+        <div class="links-wrapper" data-stein-url="https://api.steinhq.com/v1/storages/5f8424705d3cdc44fcd7d5bc/resource">
+          <div class="links-box has-text-centered">
+            <a class="account" target="_blank" href="{{url}}">{{resource}}</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <footer>
       <div class="container">
         No Copyright. Just #EndSARS.

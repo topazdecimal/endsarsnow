@@ -61,7 +61,22 @@ a {
   font-size: 1.2em;
 }
 
-.person-wrapper {
+#notable-links {
+  padding: 100px 20px;
+  background: #fafafa;
+}
+
+#resources {
+  padding: 100px 20px;
+  background: #000;
+  color: #fff;
+}
+
+#resources a {
+  color: yellow;
+}
+
+.person-wrapper, .links-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -72,34 +87,44 @@ a {
   grid-gap: 30px;
 }
 
-.person-box {
+.person-box, .links-box {
   padding: 20px;
   border: 1px solid #efefef;
   border-radius: 10px;
 }
 
-.person-box img {
+.person-box img, .links-box img {
   border-radius: 200px;
   border: 1px solid #efefef;
   margin-bottom: 10px;
+  width: 60px;
+  display: block;
+  text-align: center !important;
+  margin: 0px auto;
 }
 
-.person-box .name {
+.person-box .name, .links-box .name {
   font-weight: 500;
   font-size: 1.6em;
   margin-bottom: 10px;
 }
 
-.person-box .location {
+.person-box .account, .links-box .account {
+  font-size: 1.2em;
+  margin-top: 20px !important;
+  display: block;
+}
+
+.person-box .location, .links-box .location {
   color: #666;
 }
 
-.person-box span {
+.person-box span, .links-box span {
   font-weight: 500;
   color: #000;
 }
 
-.person-box .status {
+.person-box .status, .links-box .status {
   padding: 5px 10px;
   display: inline-block;
   border-radius: 3px;
